@@ -26,7 +26,7 @@ public class RunTImeExceptionTest03 {
         try{
             System.out.println("Abrindo o arquivo");
             System.out.println("Escrevendo dados no arquivo");
-            throw new RuntimeException();
+            throw new RuntimeException("Deu ruim pai");
         }finally {
             System.out.println("Fechando recurso liberado pelo SO");
         }
