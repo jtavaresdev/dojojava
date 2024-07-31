@@ -1,4 +1,4 @@
-package exercicios;
+package exercicios.logicasimples;
 
 import java.util.Scanner;
 
