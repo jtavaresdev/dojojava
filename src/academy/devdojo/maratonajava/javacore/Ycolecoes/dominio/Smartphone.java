@@ -33,6 +33,14 @@ public class Smartphone {
         return this.serialNumer.hashCode();
     }
 
+    @Override
+    public String toString() {
+        return "Smartphone{" +
+                "serialNumer='" + serialNumer + '\'' +
+                ", marca='" + marca + '\'' +
+                '}';
+    }
+
     public String getSerialNumer() {
         return serialNumer;
     }
