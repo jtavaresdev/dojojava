@@ -8,6 +8,7 @@ public class Manga implements Comparable<Manga> {
     private Long id;
     private String nomeDoManga;
     private double preco;
+    private int quantidade;
 
     public Manga(Long id, String nomeDoManga, double preco) {
         Objects.requireNonNull(id, "ID nulo"); // obrigando que esses valores nao sejam nulos
@@ -17,17 +18,22 @@ public class Manga implements Comparable<Manga> {
         this.preco = preco;
     }
 
+    public Manga(Long id, String nomeDoManga, double preco, int quantidade) {
+        this(id, nomeDoManga,preco);
+        this.quantidade = quantidade;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Manga manga = (Manga) o;
-        return Double.compare(preco, manga.preco) == 0 && Objects.equals(id, manga.id) && Objects.equals(nomeDoManga, manga.nomeDoManga);
+        return Objects.equals(id, manga.id) && Objects.equals(nomeDoManga, manga.nomeDoManga);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, nomeDoManga, preco);
+        return Objects.hash(id, nomeDoManga);
     }
 
     @Override
@@ -36,6 +42,7 @@ public class Manga implements Comparable<Manga> {
                 "id=" + id +
                 ", nomeDoManga='" + nomeDoManga + '\'' +
                 ", preco=" + preco +
+                ", quantidade=" + quantidade +
                 '}';
     }
 
@@ -63,6 +70,14 @@ public class Manga implements Comparable<Manga> {
         this.preco = preco;
     }
 
+    public int getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
+    }
+
     @Override
     public int compareTo(Manga outroManga) {
         // -1 se o this for menor que outroManga
@@ -77,7 +92,7 @@ public class Manga implements Comparable<Manga> {
 //            return 1;
 //        }
         return this.nomeDoManga.compareTo(outroManga.getNomeDoManga());
-        //return Double.compare(preco, outroManga.preco);
-        //return this.id.compareTo(outroManga.getId());
+//        return Double.compare(preco, outroManga.preco);
+//        return this.id.compareTo(outroManga.getId());
     }
 }
