@@ -54,4 +54,5 @@ public class LightNovel {
     public double getPrice() {
         return price;
     }
+
 }
