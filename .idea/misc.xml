@@ -7,12 +7,15 @@
         <option value="$PROJECT_DIR$/../SuperMarket/pom.xml" />
         <option value="$PROJECT_DIR$/../cep_consultar/Rest_Api/pom.xml" />
         <option value="$PROJECT_DIR$/../cep_consulta/Rest_API/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/untitled/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/../SuperMarket/pom.xml" />
         <option value="$PROJECT_DIR$/../cep_consultar/Rest_Api/pom.xml" />
+        <option value="$PROJECT_DIR$/untitled/pom.xml" />
       </set>
     </option>
   </component>
