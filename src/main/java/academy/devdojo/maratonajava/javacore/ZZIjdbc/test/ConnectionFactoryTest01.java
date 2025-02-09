@@ -14,12 +14,17 @@ public class ConnectionFactoryTest01 {
     public static void main(String[] args) {
 //        Producer producer = Producer.builder().name("A-1 Pictures").build();
 //        ProducerService.save(producer);
-//        Producer producer = Producer.builder().id(12).name("White Fox").build();
-//        ProducerService.updateName(producer);
+        Producer producer = Producer.builder().id(12).name("White Fox").build();
+        ProducerService.updatePreparedStatement(producer);
 //        List<Producer> all = ProducerService.findAll();
 //        log.info(all);
 //        ProducerService.showDriverMetaData();
-        ProducerService.showTypeScrollWorking();
+//        ProducerService.showTypeScrollWorking();
+//        log.info(ProducerService.findByNameAndUpdateToUpperCase("White"));
+//        log.info(ProducerService.findByNameAndInsertWhenNotFound("Bones"));
+//        ProducerService.findByNameAndDelete("Studio Ghibli");
+//        List<Producer> bones = ProducerService.findByNamePreparedStatement("dio");
+//        log.info("Producer '{}'", bones);
     }
 
 }
