@@ -2,7 +2,8 @@ package academy.devdojo.maratonajava.javacore.Ycolecoes.test;
 
 import academy.devdojo.maratonajava.javacore.Ycolecoes.dominio.Manga;
 
-import java.util.*;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 public class SetTest01 {
     public static void main(String[] args) {

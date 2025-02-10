@@ -5,8 +5,6 @@ import java.time.LocalDate;
 import java.time.temporal.ChronoField;
 import java.time.temporal.TemporalAdjusters;
 
-import static java.time.temporal.TemporalAdjusters.firstDayOfMonth;
-
 public class TemporalAdjusterTest01 {
     public static void main(String[] args) {
         LocalDate date = LocalDate.now();

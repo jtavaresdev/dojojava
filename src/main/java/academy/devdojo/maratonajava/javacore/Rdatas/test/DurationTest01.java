@@ -2,9 +2,7 @@ package academy.devdojo.maratonajava.javacore.Rdatas.test;
 
 
 import java.time.Duration;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.temporal.ChronoUnit;
 
 public class DurationTest01 {
     public static void main(String[] args) {

@@ -1,13 +1,8 @@
 package academy.devdojo.maratonajava.javacore.ZZIjdbc.test;
 
-import academy.devdojo.maratonajava.javacore.ZZIjdbc.conn.ConnectionFactory;
 import academy.devdojo.maratonajava.javacore.ZZIjdbc.dominio.Producer;
-import academy.devdojo.maratonajava.javacore.ZZIjdbc.repository.ProducerRepository;
 import academy.devdojo.maratonajava.javacore.ZZIjdbc.service.ProducerService;
 import lombok.extern.log4j.Log4j2;
-
-import java.sql.SQLException;
-import java.util.List;
 
 @Log4j2
 public class ConnectionFactoryTest01 {
